@@ -17,7 +17,7 @@ def read_field(line)
       break if stack.empty?
       end_i += 1
     end
-    [line[0..end_i], line[end_i + 2..]]
+    [line[0..end_i], line[end_i + 2..-1]]
   else
     line.split(',', 2)
   end
